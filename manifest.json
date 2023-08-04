@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Endpoint Finder",
+  "version": "1.0",
+  "description": "A simple Firefox extension to find endpoints in a webpage",
+  "permissions": [
+    "activeTab", "tabs", "storage"
+  ],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icons/icon-48.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content_script.js"]
+    }
+  ]
+}

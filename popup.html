@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Find Endpoints</title>
+    <style>
+      body {
+        width: 300px;
+        padding: 10px;
+        font-family: Arial, sans-serif;
+      }
+      button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      #results {
+        margin-top: 20px;
+        max-height: 400px;
+        overflow-y: auto;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        display: none;
+      }
+      .endpoint {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .sourceLink {
+        display: block;
+        font-size: 12px;
+        color: #333;
+        text-decoration: none;
+      }
+      .sourceLink:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="find-endpoints">Find Endpoints</button>
+    <button id="copy-all" style="display: none;">Copy All URLs</button>
+    <button id="clear-results" style="display: none;">Clear Results</button>
+    <div id="results"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
